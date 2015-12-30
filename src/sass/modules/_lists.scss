@@ -1,0 +1,25 @@
+ul {
+  color: $text-primary;
+  font: 400 15px/20px $font-freight;
+}
+
+.list__no-format {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list__chrono {
+  margin-bottom: 15px;
+
+  li {
+    line-height: 1em;
+    margin-bottom: 2px;
+
+    &:first-of-type {
+      color: $text-highlight-red;
+      font-style: italic;
+      margin-bottom: 4px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hr {
+  margin: 75px 0;
+  text-align: center;
+
+  span {
+    border: 1px solid $text-muted;
+    display: inline-block;
+    height: 8px;
+    position: relative;
+    transform: rotate(45deg);
+    width: 8px;
+
+    &:before,
+    &:after {
+      border: 1px solid $text-muted;
+      content: '';
+      display: block;
+      height: 8px;
+      position: relative;
+      width: 8px;
+    }
+
+    &:after {
+      left: 6px;
+      top: -16px;
+    }
+
+    &:before {
+      left: -8px;
+      top: 6px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.svg__castle {
+  background: url('/img/castle.svg') no-repeat center top;
+  background-size: 53px 70px;
+  display: inline-block;
+  height: 70px;
+  width: 53px;
+}
+
+@media (max-width: 640px) {
+  .svg__castle {
+    background-size: 40px 53px;
+    height: 53px;
+    width: 40px;
+  }
+}

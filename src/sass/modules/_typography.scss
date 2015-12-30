@@ -1,0 +1,67 @@
+h1,
+.heading-1 {
+  color: $text-primary;
+  font: 600 54px/78px $font-futura;
+  margin: 25px 0 -10px;
+  text-transform: uppercase;
+}
+
+h3,
+.heading-3 {
+  color: $text-muted;
+  font: 600 12px $font-futura;
+  margin: 50px 0 15px;
+  text-transform: uppercase;
+
+  &:first-of-type,
+  &.no-top-margin { margin-top: 0; }
+}
+
+.sub-heading-1 {
+  color: $text-highlight-blue;
+  font: 400 12px $font-freight;
+  letter-spacing: 2px;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+}
+
+p {
+  color: $text-primary;
+  font: 400 15px/20px $font-freight;
+  margin: 0 0 15px;
+}
+
+@media (max-width: 1060px) {
+  h1,
+  .heading-1 {
+    font-size: 48px;
+    line-height: 1.5em;
+  }
+
+  h3,
+  .heading-3 {
+    font-size: 11px;
+  }
+
+  .sub-heading-1 { font-size: 11px; }
+}
+
+
+@media (max-width: 640px) {
+  h1,
+  .heading-1 {
+    font-size: 42px;
+    line-height: 70px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  h1,
+  .heading-1 {
+    font-size: 36px;
+    line-height: 65px;
+  }
+
+  .sub-heading-1 { letter-spacing: 1px; }
+}

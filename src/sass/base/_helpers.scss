@@ -1,0 +1,7 @@
+//	added resets
+*,
+*:after,
+*:before {
+  @include box-sizing(border-box);        // more-info: http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+  //-webkit-font-smoothing: antialiased; 		// more info: http://maxvoltar.com/archive/-webkit-font-smoothing
+}
