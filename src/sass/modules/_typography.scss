@@ -9,7 +9,7 @@ h1,
 h3,
 .heading-3 {
   color: $text-muted;
-  font: 600 12px $font-futura;
+  font: 700 12px $font-futura;
   margin: 50px 0 15px;
   text-transform: uppercase;
 
@@ -27,7 +27,7 @@ h3,
 
 p {
   color: $text-primary;
-  font: 400 15px/20px $font-freight;
+  font: 400 16px/1.5em $font-freight;
   margin: 0 0 15px;
 }
 
@@ -37,13 +37,6 @@ p {
     font-size: 48px;
     line-height: 1.5em;
   }
-
-  h3,
-  .heading-3 {
-    font-size: 11px;
-  }
-
-  .sub-heading-1 { font-size: 11px; }
 }
 
 
@@ -53,6 +46,8 @@ p {
     font-size: 42px;
     line-height: 70px;
   }
+
+  .sub-heading-1 { font-size: 11px; }
 }
 
 
