@@ -1,6 +1,9 @@
-header {
-  margin: 0 auto;
-  text-align: center;
+a {
+  color: $text-muted;
+  text-decoration: none;
+  transition: color .3s;
+
+  &:hover { color: $text-highlight-blue; }
 }
 
 .hr {

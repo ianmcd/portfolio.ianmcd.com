@@ -2,9 +2,11 @@
   @include pie-clearfix;
   margin: 0 auto;
   max-width: 1030px;
-  padding: 75px 15px;
+  padding: 0 15px;
   width: 100%;
 }
+
+.wrapper--home-pad { padding: 75px 15px; }
 
 .grid__wrapper {
   display: flex;
@@ -77,7 +79,7 @@
       &:last-child {
         margin-right: 0;
 
-        h3:first-of-type { margin-top: 0; } 
+        h3:first-of-type { margin-top: 0; }
       }
     }
   }

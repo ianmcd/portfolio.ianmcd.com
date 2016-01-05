@@ -4,6 +4,12 @@
   display: inline-block;
   height: 70px;
   width: 53px;
+
+  &.svg__castle--small {
+    background-size: 30px 40px;
+    height: 40px;
+    width: 30px;
+  }
 }
 
 @media (max-width: 640px) {

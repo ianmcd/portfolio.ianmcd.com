@@ -1,0 +1,27 @@
+.project__intro {
+  background-size: cover;
+  overflow: hidden;
+  padding: 450px 0 75px;
+  position: relative;
+}
+
+.project__intro__figure {
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+.project__intro__content {
+  background: $white;
+  padding: 50px;
+  position: relative;
+  z-index: 200;
+}
+
+
+.project__intro--corvisa {
+  background: url('../img/background_corvisa-min@2x.png') no-repeat center center;
+
+  .project__intro__figure { top: 100px; }
+}
