@@ -74,7 +74,11 @@
       margin-right: 11.9%;
       width: 44.05%;
 
-      &:last-child { margin-right: 0; }
+      &:last-child {
+        margin-right: 0;
+
+        h3 { margin-top: 0; } 
+      }
     }
   }
 }
