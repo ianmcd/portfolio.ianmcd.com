@@ -16,7 +16,8 @@ I've used flexbox for positioning of elements, so only modern browsers will be f
 * [Freight Text Pro](https://typekit.com/fonts/freight-text-pro) & [Futura PT](https://typekit.com/fonts/futura-pt) served by [Typekit](https://typekit.com/)
 
 ###js libraries
-None currently.
+* [jquery](https://jquery.com/) &ndash; version 2.1.4
+* [retina.js](http://imulus.github.io/retinajs/) &ndash; auto replaces images with @2x when appropriate..
 
 ###environment
 I use [grunt](https://github.com/gruntjs/grunt) to streamline a variety of tasks and to view & test things on a local server with livereload. I use the following [packages](https://github.com/ianmcd/portfolio.ianmcd.com/blob/master/package.json):

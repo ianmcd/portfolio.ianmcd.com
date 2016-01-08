@@ -19,9 +19,11 @@
   z-index: 200;
 }
 
+.project__section {
+  padding: 100px 0;
+  position: relative;
+}
 
-.project__intro--corvisa {
-  background: url('../img/background_corvisa-min@2x.png') no-repeat center center;
-
-  .project__intro__figure { top: 100px; }
+.project__brand {
+  margin-bottom: 100px;
 }

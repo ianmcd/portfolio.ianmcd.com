@@ -6,8 +6,15 @@ a {
   &:hover { color: $text-highlight-blue; }
 }
 
+.center { text-align: center; }
+
+.narrow {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
 .hr {
-  margin: 75px 0;
+  margin: 70px 0;
   text-align: center;
 
   span {

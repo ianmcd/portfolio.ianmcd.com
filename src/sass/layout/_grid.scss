@@ -32,6 +32,28 @@
   width: 40%;
 }
 
+.grid__project--intro {
+  margin-right: 11.1%;
+  order: 1;
+  width: 66.7%;
+}
+
+.grid__project--roles {
+  order: 2;
+  width: 22.2%;
+}
+
+.grid__font-samples--left {
+  margin-right: 4.4%;
+  order: 1;
+  width: 46.1%;
+}
+
+.grid__font-samples--right {
+  order: 2;
+  width: 49.5%;
+}
+
 
 
 @media (max-width: 1060px) {

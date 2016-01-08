@@ -6,6 +6,15 @@ h1,
   text-transform: uppercase;
 }
 
+h2,
+.heading-2 {
+  color: $text-primary;
+  font: 600 48px/60px $font-freight;
+  margin: 0 0 25px;
+
+  &.no-margin { margin: 0; }
+}
+
 h3,
 .heading-3 {
   color: $text-muted;
@@ -33,6 +42,13 @@ p {
   margin: 0 0 15px;
 
   &.text-large { font-size: 18px; }
+
+  &.project__title {
+    color: $text-muted;
+    font: 400 13px $font-futura;
+    margin: 0;
+    text-transform: uppercase;
+  }
 }
 
 @media (max-width: 1060px) {
