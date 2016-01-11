@@ -56,3 +56,20 @@
     &:last-child { margin: 0; }
   }
 }
+
+.project__section--corvisa {
+  background: linear-gradient(to bottom, $brand-corvisa-light-gray 0%, $brand-corvisa-dark-gray 100%);
+}
+
+.project__section--corvisa-green { background: linear-gradient(to bottom, $brand-corvisa-green 0%, $brand-corvisa-green-grad 100%); }
+
+.project__palette--corvisa li {
+  &:nth-child(1) { background-color: $brand-corvisa; }
+  &:nth-child(2) { background-color: $brand-corvisa-yellow; }
+  &:nth-child(3) { background-color: $brand-corvisa-green; }
+  &:nth-child(4) { background-color: $brand-corvisa-light-gray; }
+  &:nth-child(5) {
+    background-color: $white;
+    color: $text-primary;
+  }
+}

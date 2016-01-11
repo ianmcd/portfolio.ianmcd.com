@@ -157,3 +157,36 @@ ul {
     &:last-child { margin-bottom: 0; }
   }
 }
+
+.list__palette {
+  display: flex;
+  margin: 0 auto;
+  max-width: 900px;
+
+  li {
+    color: $white;
+    display: block;
+    font: 13px $font-futura;
+    height: 125px;
+    position: relative;
+    width: 20%;
+
+    &:before {
+      bottom: 32px;
+      content: attr(data-hex);
+      font-weight: bold;
+      left: 20px;
+      position: absolute;
+      text-transform: uppercase;
+    }
+
+    &:after {
+      bottom: 17px;
+      content: attr(data-name);
+      font-size: 12px;
+      left: 20px;
+      position: absolute;
+      text-transform: uppercase;
+    }
+  }
+}

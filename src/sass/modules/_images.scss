@@ -1,3 +1,5 @@
+figure img { max-width: 100%; }
+
 .svg__castle {
   background: url('../img/castle.svg') no-repeat center top;
   background-size: 53px 70px;
@@ -12,16 +14,32 @@
   }
 }
 
+.project__devices {
+  position: relative;
+  z-index: 100;
+}
+
+.project__display--single {
+  padding: 0 50px;
+}
+
+.project__display--double div {
+  display: flex;
+  margin-bottom: 50px;
+
+  &:last-child { margin-bottom: 0; }
+
+  figure {
+    width: 47.5%;
+
+    &:first-child { margin-right: 5%; }
+  }
+}
+
 @media (max-width: 640px) {
   .svg__castle {
     background-size: 40px 53px;
     height: 53px;
     width: 40px;
   }
-}
-
-
-.project__devices {
-  position: relative;
-  z-index: 100;
 }
