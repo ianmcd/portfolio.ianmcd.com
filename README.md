@@ -1,4 +1,4 @@
-######Updated 01/01/2016
+######Live Site Updated 01/03/2016
 
 ##[http://portfolio.ianmcd.com](http://portfolio.ianmcd.com)
 
@@ -6,7 +6,9 @@ The resume and portfolio of Milwaukee based Visual Designer & Front-End Develope
 
 ###other formats
 * Resume - Plain Text &ndash; TBA
-* Resume & Portfolio - PDF &ndash; TBA
+* Resume - PDF &ndash; TBA
+* Portfolio - PDF &ndash; TBA
+* __Resume & Portfolio - PDF &ndash; TBA__
 
 ##dev info
 ###about browser support
@@ -16,8 +18,9 @@ I've used flexbox for positioning of elements, so only modern browsers will be f
 * [Freight Text Pro](https://typekit.com/fonts/freight-text-pro) & [Futura PT](https://typekit.com/fonts/futura-pt) served by [Typekit](https://typekit.com/)
 
 ###js libraries
-* [jquery](https://jquery.com/) &ndash; version 2.1.4
-* [retina.js](http://imulus.github.io/retinajs/) &ndash; auto replaces images with @2x when appropriate..
+* [jquery](https://jquery.com/)
+* [retina.js](http://imulus.github.io/retinajs/) &ndash; auto replaces images with @2x when appropriate.
+* [isotope](http://isotope.metafizzy.co/) &ndash; for masonry features.
 
 ###environment
 I use [grunt](https://github.com/gruntjs/grunt) to streamline a variety of tasks and to view & test things on a local server with livereload. I use the following [packages](https://github.com/ianmcd/portfolio.ianmcd.com/blob/master/package.json):
@@ -25,7 +28,3 @@ I use [grunt](https://github.com/gruntjs/grunt) to streamline a variety of tasks
 
 ###deployment
 To come.
-
-##release notes
-###january 2016
-* initial release of resume &ndash; 01/01/2016
