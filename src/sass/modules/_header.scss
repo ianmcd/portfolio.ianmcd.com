@@ -7,4 +7,7 @@ header {
   background: $white;
   height: 80px;
   padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 9000;
 }

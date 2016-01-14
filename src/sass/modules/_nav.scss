@@ -4,6 +4,12 @@
   text-transform: uppercase;
 }
 
+.nav__center {
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
 .nav__squares {
   display: inline-block;
   height: 10px;

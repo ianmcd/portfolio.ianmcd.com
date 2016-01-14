@@ -21,6 +21,7 @@ I've used flexbox for positioning of elements, so only modern browsers will be f
 * [jquery](https://jquery.com/)
 * [retina.js](http://imulus.github.io/retinajs/) &ndash; auto replaces images with @2x when appropriate.
 * [isotope](http://isotope.metafizzy.co/) &ndash; for masonry features.
+* [imagesloaded](http://imagesloaded.desandro.com/) &ndash; detects if images are loaded, using w/ isotope to resolve masonry issues.
 
 ###environment
 I use [grunt](https://github.com/gruntjs/grunt) to streamline a variety of tasks and to view & test things on a local server with livereload. I use the following [packages](https://github.com/ianmcd/portfolio.ianmcd.com/blob/master/package.json):

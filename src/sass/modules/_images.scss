@@ -1,5 +1,7 @@
 figure img { max-width: 100%; }
 
+.intro__logo { margin: 50px auto; }
+
 .svg__castle {
   background: url('../img/castle.svg') no-repeat center top;
   background-size: 53px 70px;
@@ -14,6 +16,14 @@ figure img { max-width: 100%; }
   }
 }
 
+.svg__corvisa-dots {
+  background: url('../img/corvisa_dots-color.svg') no-repeat center top;
+  background-size: 70px 70px;
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+}
+
 .project__devices {
   position: relative;
   z-index: 100;
@@ -23,8 +33,9 @@ figure img { max-width: 100%; }
   padding: 0 50px;
 }
 
-.project__display--double div {
+.project__display--double {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 
   &:last-child { margin-bottom: 0; }
@@ -33,6 +44,17 @@ figure img { max-width: 100%; }
     width: 47.5%;
 
     &:first-child { margin-right: 5%; }
+  }
+}
+
+.project__display--masonry {
+  //display: flex;
+
+  &:last-child { margin-bottom: 0; }
+
+  figure {
+    margin-bottom: 50px;
+    width: 47.5%;
   }
 }
 

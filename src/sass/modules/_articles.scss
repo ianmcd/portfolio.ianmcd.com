@@ -1,5 +1,17 @@
 article {
   margin-bottom: 35px;
-  
+
   &:last-child { margin-bottom: 0; }
+}
+
+.article__company-intro {
+  display: flex;
+  margin-bottom: 0;
+
+  p {
+    margin-right: 5%;
+    width: 30%;
+
+    &:last-child { margin-right: 0; }
+  }
 }

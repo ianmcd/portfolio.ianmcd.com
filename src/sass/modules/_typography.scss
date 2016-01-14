@@ -1,4 +1,5 @@
 .text-white { color: $white; }
+.text-nines { color: $text-nines; }
 
 h1,
 .heading-1 {
@@ -36,6 +37,13 @@ h3,
   letter-spacing: 2px;
   margin: 0 0 8px;
   text-transform: uppercase;
+}
+
+.sub-heading-2 {
+  color: $text-highlight-blue;
+  font: 400 28px/1.5em $font-freight;
+  font-style: italic;
+  margin: 25px 0 0;
 }
 
 p {
