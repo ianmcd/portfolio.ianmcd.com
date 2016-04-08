@@ -7,7 +7,7 @@ The resume and portfolio of Milwaukee based Visual Designer & Front-End Develope
 ###other formats
 * Resume - Plain Text &ndash; TBA
 * Resume - PDF &ndash; TBA
-* Portfolio - PDF &ndash; TBA
+* Portfolio - [PDF](https://portfolio.ianmcd.com/downloads/im-portfolio-latest.pdf)
 * __Resume & Portfolio - PDF &ndash; TBA__
 
 ##dev info
