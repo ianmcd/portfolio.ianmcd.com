@@ -1,0 +1,43 @@
+//	BASE-LEVEL TAGS
+body { position: relative; } // for scrollspy functionality
+
+address {
+  color: $terracotta;
+  font: 500 12px/1.5em $font-brandon;
+  letter-spacing: 1.75px;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+
+.hr {
+  text-align: center;
+
+  span {
+    border: 1px solid $sand-light;
+    display: inline-block;
+    height: 8px;
+    position: relative;
+    transform: rotate(45deg);
+    width: 8px;
+
+    &:before,
+    &:after {
+      border: 1px solid $sand-light;
+      content: '';
+      display: block;
+      height: 6px;
+      position: relative;
+      width: 6px;
+    }
+
+    &:before {
+      left: -8px;
+      top: 6px;
+    }
+
+    &:after {
+      left: 6px;
+      top: -16px;
+    }
+  }
+}

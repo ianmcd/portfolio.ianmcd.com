@@ -1,0 +1,41 @@
+@import 	'compass';
+
+
+//	core
+@import		'core/normalize';
+@import		'core/settings';
+@import		'core/helpers';
+@import   'core/abstractions';
+@import   'core/animations';
+@import		'core/base';
+@import		'core/content';
+
+
+//  lib
+@import   'lib/swiper';
+
+
+//  layout
+@import   'layout/general';
+@import   'layout/grid';
+@import   'layout/flex';
+
+
+//  elements
+@import   'elements/lists';
+@import   'elements/figure';
+@import   'elements/section';
+
+
+//  modules
+@import   'modules/nav';
+@import   'modules/gallery';
+@import   'modules/modal';
+@import   'modules/swiper';
+
+
+//  themes
+@import   'theme/resume';
+@import   'theme/portfolio';
+@import   'theme/corvisa-galleries';
+@import   'theme/trivera-galleries';

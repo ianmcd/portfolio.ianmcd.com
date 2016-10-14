@@ -1,0 +1,45 @@
+.list__chrono {
+  margin-bottom: 11px;
+
+  li {
+    color: $dark;
+    font: 400 16px/1.5em $font-freight;
+
+    &:first-child {
+      color: $viridian;
+      font-style: italic;
+    }
+
+    &:nth-child(3) { margin-top: -2px; }
+  }
+
+  time {
+    font: 400 11px/22px $font-brandon;
+    text-transform: uppercase;
+  }
+}
+
+
+.list__social {
+  margin-bottom: 70px;
+
+  li {
+    display: inline-block;
+    height: 22px;
+    margin: 0 8px;
+    width: 22px;
+
+    &:first-child { margin-left: 0; }
+    &:last-child { margin-right: 0; }
+  }
+
+  a {
+    color: $sand;
+    font-size: 22px;
+    text-decoration: none;
+    transition: color .3s;
+
+    &:hover { color: $terracotta; }
+  }
+
+}

@@ -1,0 +1,25 @@
+.flex__resume-photo img {
+  left: 0;
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+
+.flex__resume-experience article {
+  margin-top: 36px;
+
+  aside {
+    color: $mid;
+    display: block;
+    font-style: italic;
+  }
+
+  &:first-of-type { margin-top: 0; }
+}
+
+
+.flex__resume-education div:nth-child(2) {
+  margin-top: 63px;
+}

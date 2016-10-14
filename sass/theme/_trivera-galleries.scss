@@ -1,0 +1,58 @@
+.section__trivera .gallery { margin-bottom: 0; }
+
+.slide__trivera--color-direct {
+  background: url('/img/color-direct-bg.png') no-repeat;
+  background-size: 1000px 550px;
+}
+
+.slide__trivera--caterinas {
+  background: url('/img/caterinas-bg.png') no-repeat;
+  background-size: 1000px 550px;
+}
+
+.slide__trivera--misc {
+  background: url('/img/misc-work-bg.png') no-repeat;
+  background-size: 1000px 550px;
+}
+
+@media	only screen and (-webkit-min-device-pixel-ratio: 1.3),
+        only screen and (-o-min-device-pixel-ratio: 13/10),
+        only screen and (min-resolution: 120dpi) {
+
+  .slide__trivera--color-direct { background-image: url('/img/color-direct-bg@2x.png'); }
+  .slide__trivera--caterinas { background-image: url('/img/caterinas-bg@2x.png'); }
+  .slide__trivera--misc { background-image: url('/img/misc-work-bg@2x.png'); }
+}
+
+
+@media only screen and (max-width: 1080px) {
+  .slide__trivera--color-direct,
+  .slide__trivera--caterinas,
+  .slide__trivera--misc {
+    background: none;
+  }
+
+  .slide__trivera--color-direct figure {
+    background: url('/img/color-direct-bg.png') no-repeat;
+    background-size: 1000px 550px;
+  }
+
+  .slide__trivera--caterinas figure {
+    background: url('/img/caterinas-bg.png') no-repeat;
+    background-size: 1000px 550px;
+  }
+
+  .slide__trivera--misc figure {
+    background: url('/img/misc-work-bg.png') no-repeat;
+    background-size: 1000px 550px;
+  }
+
+
+  @media	only screen and (-webkit-min-device-pixel-ratio: 1.3),
+          only screen and (-o-min-device-pixel-ratio: 13/10),
+          only screen and (min-resolution: 120dpi) {
+    .slide__trivera--color-direct figure { background-image: url('/img/color-direct-bg@2x.png'); }
+    .slide__trivera--caterinas figure { background-image: url('/img/caterinas-bg@2x.png'); }
+    .slide__trivera--misc figure { background-image: url('/img/misc-work-bg@2x.png'); }
+  }
+}

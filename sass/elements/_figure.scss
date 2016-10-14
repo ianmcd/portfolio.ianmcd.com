@@ -1,0 +1,23 @@
+figure {
+  display: inline-block;
+  position: relative;
+
+  img { max-width: 100%; }
+}
+
+.fig__clipper {
+  background: url('/img/clipper.svg') no-repeat;
+  height: 126px;
+  width: 105px;
+}
+
+.fig__chest {
+  background: url('/img/chest.svg') no-repeat;
+  height: 295px;
+  left: 50%;
+  position: absolute;
+  top: 90px;
+  transform: translateX(-50%);
+  width: 272px;
+  z-index: 1;
+}
