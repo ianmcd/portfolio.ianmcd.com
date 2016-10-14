@@ -1,5 +1,5 @@
 ##[http://portfolio.ianmcd.com](http://portfolio.ianmcd.com)
-######*v2.0 &ndash; Site Updated: 09/12/2016*
+######v2.0
 
 The resume and portfolio of Milwaukee based Visual Designer & Front-End Developer, Ian McDowell.
 
