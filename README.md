@@ -18,6 +18,6 @@ I've used flexbox for positioning of elements and CSS transitions/animations, so
 
 ###js libraries
 * [jquery 2.1.4](https://jquery.com/)
-* [retina.js 2.1.0 slidhtly modified](http://imulus.github.io/retinajs/) &ndash; auto replaces images with @2x when appropriate.
+* [retina.js 2.1.0 slightly modified](http://imulus.github.io/retinajs/) &ndash; auto replaces images with @2x when appropriate.
 * [twitter bootstrap scrollspy.js 3.3.7](http://isotope.metafizzy.co/) &ndash; for updating nav targets based on scroll position.
 * [swiper 3.3.1](http://idangero.us/swiper/) &ndash; carousel/slider with mobile touch capabilities.
