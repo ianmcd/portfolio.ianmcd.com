@@ -1,5 +1,16 @@
+# scss linter config file, more info:
+#   scss linter - https://github.com/causes/scss-lint
+#   configuration options - https://github.com/causes/scss-lint/blob/master/lib/scss_lint/linter/README.md
+
+# starting this off by disabling all options then slowly introducing every linter to our stylesheets to sort
+# out problems one by one.  if a linter isn't on this list then check the default settings here:
+# https://github.com/causes/scss-lint/blob/master/config/default.yml
+
 linters:
   NestingDepth:
+    max_depth: 4
+
+  SelectorDepth:
     max_depth: 4
 
   SelectorFormat:

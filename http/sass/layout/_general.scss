@@ -1,0 +1,38 @@
+.header__wrapper {
+  background: $white;
+  height: 50px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.main__wrapper {
+  background: $page-bg;
+  margin: 0 50px;
+  min-height: 600px;
+  padding: 50px 0;
+
+  &:after {
+    background: $white;
+    bottom: 0;
+    content: '';
+    height: 50px;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+}
+
+
+
+@media only screen and (max-width: 765px) {
+  .main__wrapper {
+    margin: 0;
+    padding-bottom: 0;
+
+    &:after { content: none; }
+  }
+}

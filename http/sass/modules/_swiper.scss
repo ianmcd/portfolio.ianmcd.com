@@ -1,0 +1,62 @@
+.slide-details {
+  background: $white url('/img/jellyfish.svg') no-repeat center center;
+  background-size: 202px 319px;
+  cursor: auto;
+  height: 100%;
+  padding: 50px;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  width: 40%;
+  z-index: 10;
+}
+
+.swiper-slide figure {
+  position: absolute;
+
+  img {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.slide-expand {
+  bottom: 50px;
+  color: $sand;
+  font-size: 22px;
+  position: absolute;
+  right: 50px;
+  text-decoration: none;
+  transition: color .3s;
+
+  &:hover { color: $terracotta; }
+}
+
+.slide__standard-figure {
+  bottom: 0;
+  //height: 500px;
+  left: 0;
+  padding-bottom: 50%;
+  width: 60%;
+}
+
+.slide__full-figure {
+  //height: 600px;
+  left: 0;
+  padding-bottom: 60%;
+  top: 0;
+  width: 60%;
+}
+
+
+
+@media only screen and (max-width: 1080px) {
+  .swiper-slide figure {
+    padding: 0;
+    z-index: 2;
+  }
+  
+  .slide__standard-figure img { margin-top: 8.34%; }
+}

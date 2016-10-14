@@ -1,0 +1,102 @@
+.modal__wrapper {
+  background: $page-bg;
+  bottom: 0;
+  display: none;
+  left: 0;
+  opacity: 0;
+  overflow-y: auto;
+  padding: 50px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.modal__inner {
+  background: $white;
+  min-height: 100%;
+  padding: 50px;
+  position: relative;
+  transform: translateY(200px);
+  transition: transform .3s;
+  width: 100%;
+
+  &.js-open { transform: translateY(0); }
+}
+
+.modal__header {
+  background: $white;
+  left: 0;
+  padding: 25px 50px;
+  position: absolute;
+  right: 0;
+  top: 25px;
+  z-index: 10;
+
+  &:after {
+    background: $sand-light;
+    bottom: 0;
+    content: '';
+    height: 1px;
+    left: 50px;
+    position: absolute;
+    right: 50px;
+    z-index: 20;
+  }
+}
+
+.modal__header--left {
+  float: left;
+}
+
+.modal__controls {
+  float: right;
+  margin-top: 7px;
+
+  li {
+    float: left;
+    padding: 0 5px;
+
+    &.modal__controls--vr {
+      margin-right: 5px;
+      padding-right: 10px;
+      position: relative;
+
+      &:after {
+        background: $sand-light;
+        content: '';
+        height: 28px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+      }
+    }
+
+    &:first-child { padding-left: 0; }
+    &:last-child { padding-right: 0; }
+  }
+
+  a {
+    color: $sand;
+    font-size: 28px;
+    text-decoration: none;
+    transition: color .3s;
+
+    &:hover { color: $terracotta; }
+  }
+}
+
+.modal__body {
+  padding-top: 93px;
+  text-align: center;
+}
+
+.modal__image {
+  background: $page-bg;
+  max-width: 1200px;
+  width: 100%;
+
+  img { display: block; }
+}

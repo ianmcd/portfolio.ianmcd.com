@@ -1,0 +1,15 @@
+.grid__wrapper {
+  display: block;
+  margin: 0 auto;
+  max-width: 1100px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .grid__wrapper { max-width: 700px; } // [ 50 | 600 | 50 ]
+}
+
+@media only screen and (max-width: 640px) {
+  .grid__wrapper { max-width: 540px; } // [ 50 | 440 | 50 ]
+}

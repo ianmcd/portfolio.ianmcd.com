@@ -3,121 +3,544 @@
 <!--
       hey there!  having trouble finding what you're looking for?
       view the full source & uncompiled files(literally everything) here:
-      https://github.com/ianmcd/portfolio.ianmcd.com
+      github.
 -->
 
 
 <!doctype html>
 <html>
   <head>
-    <title>Visual Design &amp; Front-End Development in Milwaukee, WI &ndash; Ian McDowell</title>
+    <title>Interactive / Web Designer in Milwaukee, WI &mdash; Ian McDowell</title>
     <meta charset="utf-8">
     <meta name="author" content="Ian McDowell">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Resume / Portfolio of Visual Designer and Front-End Developer, Ian McDowell.">
+    <meta name="description" content="Resume and portfolio of Milwaukee based web designer, Ian McDowell.">
 
-    <link rel="shortcut icon" href="http://portfolio.ianmcd.com/favicon.ico" />
-
-    <!-- typekit -->
-    <script src="https://use.typekit.net/pgh8xdd.js"></script>
+    <script src="https://use.typekit.net/flv3bmw.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-
-    <!-- compiled sass -->
-    <link rel="stylesheet" type="text/css" href="/css/merle.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/css/fonts/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/system.css" />
   </head>
   <body>
-    <div class="wrapper wrapper--home-pad">
-      <header>
-        <figure class="svg__castle"></figure>
+    <header class="header__wrapper">
+      <a href="#" class="mobile-nav">
+        <div>
+          <span class="mobile-nav__bar--top"></span>
+          <span class="mobile-nav__bar--mid"></span>
+          <span class="mobile-nav__bar--bottom"></span>
+          <p class="mobile-nav__text">Menu</p>
+        </div>
+      </a>
+      <nav class="grid__wrapper align__center js-nav-list">
+        <ul class="nav list__no-format list__nav-list">
+          <li class="list__nav--vr"><a href="#anchor-resume">Resume</a></li>
+          <li><a href="#anchor-shoretel" data-years="2016–Current">ShoreTel</a></li>
+          <li><a href="#anchor-corvisa" data-years="2013–2016">Corvisa</a></li>
+          <li><a href="#anchor-trivera" data-years="2008–2013">Trivera</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main__wrapper">
+      <section id="anchor-intro" class="grid__wrapper section__intro align__center">
+        <figure class="fig__clipper"></figure>
         <h1>Ian McDowell</h1>
-        <p class="sub-heading-1">Visual Design &amp; Front-End Development</p>
-        <p class="heading-3 no-top-margin">Milwaukee, WI</p>
-
-      </header>
+        <p class="subtitle">Interactive / Web Designer</p>
+        <address>Milwaukee, WI</address>
+      </section>
       <div class="hr"><span></span></div>
-      <div class="grid__wrapper">
-        <div class="grid__intro">
+      <section id="anchor-resume" class="grid__wrapper section__resume align__center">
+        <h2>Resume</h2>
+        <div class="flex__wrapper">
+          <figure class="flex__resume-photo">
+            <img src="/img/ian-cora.png" data-rjs="2" />
+          </figure>
+          <div class="flex__resume-intro">
+            <div>
+              <h3>About Me</h3>
+              <p>Hello!  I’m Ian, a visual designer &amp; front-end developer living and working in Milwaukee, Wisconsin.  When I’m not working to make the internet a better place, I am usually found with my beautiful wife.  Together we have a wonderful daughter and two magnificent cat-beasts.  Life is good.</p>
 
-          <h3>About Me</h3>
-          <p>Hello!  I’m Ian, a visual designer &amp; front-end developer living and working in Milwaukee, Wisconsin.  When I’m not working to make the internet a better place, I am usually found with my beautiful wife.  Together we have a wonderful daughter and two magnificent cat-beasts.  Life is good.</p>
+              <h3>Qualifications</h3>
+              <p>I am an award-winning designer and technically gifted front-end developer with a decade of experience.  I maintain a reputation for clean, legible and organized code, as well as creative, well thought-out designs with a focus on user experience and product quality.  I have a passion for creating effective user experienccs and relish involvement in the build process, in order to see projects through from start to finish.</p>
+            </div>
+          </div>
+          <div class="flex__resume-experience">
+            <h3>Experience</h3>
+            <article>
+              <ul class="list__no-format list__chrono">
+                <li>Interactive Designer</li>
+                <li><strong>ShoreTel, Milwaukee WI</strong></li>
+                <li><time>Jan 2016&ndash;Current (< 1 YR)</time></li>
+              </ul>
+              <aside>ShoreTel acquired Corvisa LLC in January 2016.</aside>
+              <p>Involved in discussions around planning of brand updates and general website improvements.  Worked closely with members of the Demand Generation and Content Marketing teams to develop various materials such as banner advertisements and small scale Ember applications.  Currently wireframing and helping plan design direction for redesign of corporate marketing website.</p>
+            </article>
 
-          <h3>Qualifications</h3>
-          <p>I am an award-winning designer and technically gifted front-end developer with a decade of experience.  I maintain a reputation for clean, legible and organized code, as well as creative, well thought-out designs with a focus on user experience and product quality.  I have a passion for creating effective user experienccs and relish involvement in the build process, in order to see projects through from start to finish.</p>
+            <article>
+              <ul class="list__no-format list__chrono">
+                <li>Interactive Designer</li>
+                <li><strong>Corvisa LLC, Milwaukee WI</strong></li>
+                <li><time>Oct 2013&ndash;Jan 2016 (2 YRS)</time></li>
+              </ul>
+              <p>Responsible for the design, development and general management of Corvisa’s marketing websites.  Built a variety of custom modules for Django CMS using Python and Javascript.  Worked directly with CTO and VP of Marketing to ensure proper implementation and quick turnaround on high priority projects.  Also involved in A/B Testing and implementation processes as well as occasionally assisting UI/UX and development teams with the design and implementation of dashboards, documentation and status pages.</p>
+            </article>
 
+            <article>
+              <ul class="list__no-format list__chrono">
+                <li>Web Designer &amp; Front-End Developer</li>
+                <li><strong>Trivera Interactive, Menomonee Falls WI</strong></li>
+                <li><time>Jul 2008&ndash;Oct 2013 (5 YRS)</time></li>
+              </ul>
+              <p>Responsible for the visual design and front-end development of a variety of client sites.  Worked directly with several high-profile clients including Potawatomi Bingo Casino, Mitchell International Airport, Frabill and Usingers.  Worked closely with back-end development &amp; production teams to ensure technical feasability and correct design implementation.  Built templates for various CMS products including Wordpress and Concrete 5.</p>
+            </article>
+          </div>
+          <div class="flex__resume-education">
+            <div>
+              <div>
+                <h3>Education</h3>
+                <ul class="list__no-format list__chrono">
+                  <li>A.A.S. Web Development</li>
+                  <li><strong>Harper College, Palatine IL</strong></li>
+                  <li><time>1998&ndash;2003</time></li>
+                </ul>
+                <ul class="list__no-format list__chrono">
+                  <li>Graphic Design &amp; Illustration</li>
+                  <li><strong>UW Parkside, Kenosha WI</strong></li>
+                  <li><time>2004&ndash;2007</time></li>
+                </ul>
+              </div>
+
+              <div>
+                <h3>Design Utilities</h3>
+                <p>Sketch, Photoshop, Illustrator, InVision, Typekit, Pen &amp; Paper</p>
+
+                <h3>Development Skillset</h3>
+                <p>HTML, CSS <em>(Sass, LESS),</em> Javascript <em>(JQuery, Ember)</em></p>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="grid__experience">
-
-          <h3>Experience</h3>
-          <article>
-            <ul class="list__no-format list__chrono">
-              <li>Interactive Designer</li>
-              <li><strong>ShoreTel, Milwaukee WI</strong></li>
-              <li><time>Jan 2016 - Current</time></li>
-            </ul>
-            <p>Acquired Corvisa in 2016.</p>
-          </article>
-
-          <article>
-            <ul class="list__no-format list__chrono">
-              <li>Interactive Designer</li>
-              <li><strong>Corvisa LLC, Milwaukee WI</strong></li>
-              <li><time>Oct 2013 - Jan 2016 (2 YRS)</time></li>
-            </ul>
-            <p>Responsible for the design, development and general management of Corvisa’s marketing websites.  Built a variety of custom modules for Django CMS using Python and Javascript.  Worked directly with CTO and VP of Marketing to ensure proper implementation and quick turnaround on high priority projects.  Also involved in A/B Testing and implementation processes as well as occasionally assisting UI/UX and development teams with the design and implementation of dashboards, documentation and status pages.</p>
-          </article>
-
-          <article>
-            <ul class="list__no-format list__chrono">
-              <li>Web Designer &amp; Front-End Developer</li>
-              <li><strong>Trivera Interactive, Menomonee Falls WI</strong></li>
-              <li><time>Jul 2008 - Oct 2013 (5 YRS)</time></li>
-            </ul>
-            <p>Responsible for the visual design and front-end development of a variety of client sites.  Worked directly with several high-profile clients including Potawatomi Bingo Casino, Mitchell International Airport, Frabill and Usingers.  Worked closely with back-end development &amp; production teams to ensure technical feasability and correct design implementation.  Built templates for various CMS products including Wordpress and Concrete 5.</p>
-          </article>
-
-          <article>
-            <ul class="list__no-format list__chrono">
-              <li>Web Designer &amp; Developer</li>
-              <li><strong>G4 Incorporated, Milwaukee WI</strong></li>
-              <li><time>Dec 2007 - Jul 2008 (< 1 YRS)</time></li>
-            </ul>
-            <p>Worked on various internal projects involving corporate rebranding including the creation of a Flash driven
-    corporate site and a commercial site incorporating HTML/CSS, PHP and Javascript.  Occasionally worked with a handful of smaller clientel providing a range of identity services including print materials and web design services.</p>
-          </article>
-
+        <figure class="fig__chest parallax"></figure>
+      </section>
+      <div class="hr"><span></span></div>
+      <section id="anchor-shoretel" class="grid__wrapper section__shoretel align__center">
+        <h2>ShoreTel (2016)</h2>
+        <div class="portfolio__intro center">
+          <p class="large muted">I've only just begun my adventures at ShoreTel, stay tuned for updates.<span>(but continue scrolling for other things I've worked on!)</span>
         </div>
+      </section>
+      <div class="hr"><span></span></div>
+      <section id="anchor-corvisa" class="grid__wrapper section__corvisa align__center">
+        <h2>Corvisa (2013&ndash;2016)</h2>
+        <div class="portfolio__wrapper">
+          <div class="portfolio__intro flex__wrapper">
+            <p>I joined the Corvisa team in 2013.  Initially working in a team of two, I performed a wide variety of design related tasks.  Over my first year the company grew quickly and as more structured design roles were assigned I took on the responsibility of designing, developing &amp; maintaining marketing related web entities.</p>
+            <p>As a member of the marketing team, I learned a lot about designing within a team and came to value focusing and improving upon design within a single brand.  I also found myself enjoying the more strategic thinking involved with web marketing&mdash;such as creating user flows, A/B testing and making data-driven decisions.</p>
+            <p>I found a lot of value in the camaraderie and shared responsibility that being in a team brought.  I was also graced with the good fortune to work under a leader who allowed me the freedom to push myself, both professionally and creatively, and make mistakes&mdash;trusting that ultimately I would not only learn from those mistakes but be better because of them.</p>
+          </div>
+          <div class="portfolio__gallery gallery">
+            <input type="checkbox" class="gallery__mobile-check" id="corvisa-gallery-menu">
+            <div class="gallery__mobile-wrapper">
+              <label for="corvisa-gallery-menu" class="gallery__mobile-toggle">corvisa.com</label>
+              <ul class="list__no-format gallery__toggles">
+                <li class="active"><a href="#cor-1">corvisa.com</a></li>
+                <li><a href="#cor-2">Developers</a></li>
+                <li><a href="#cor-3">Stratus</a></li>
+                <li><a href="#cor-4">Emailers</a></li>
+                <li><a href="#cor-5">Styleguide</a></li>
+              </ul>
+            </div>
 
-        <div class="grid__education">
-
-          <div>
-            <h3>Education</h3>
-            <ul class="list__no-format list__chrono">
-              <li>A.A.S. Web Development</li>
-              <li><strong>Harper College, Palatine IL</strong></li>
-              <li><time>1998 - 2003</time></li>
-            </ul>
-            <ul class="list__no-format list__chrono">
-              <li>Graphic Design &amp; Illustration</li>
-              <li><strong>UW Parkside, Kenosha WI</strong></li>
-              <li><time>2004 - 2007</time></li>
-            </ul>
+            <div class="gallery__wrapper">
+              <div class="gallery__swiper gallery__swiper--active" id="cor-1">
+                <div class="gallery__button-prev imcd-navigate_before"></div>
+                <div class="gallery__button-next imcd-navigate_next"></div>
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide slide__corvisa--dark-poly">
+                      <input type="checkbox" id="corvisa-com-1">
+                      <div class="swiper-slide-flipper">
+                        <figure class="slide__standard-figure">
+                          <img src="/img/corvisa/corv-home-thumb.png" data-rjs="2" />
+                          <label for="corvisa-com-1">View Details</label>
+                        </figure>
+                        <div class="slide-details">
+                          <h4>Corvisa.com</h4>
+                          <p class="note">Corvisa LLC, 2014&ndash;2016</p>
+                          <p>Primary marketing website for Corvisa, a telecommunications software company based in Milwaukee.  I was responsible for the design, development and day-to-day management.  Built using DjangoCMS.</p>
+                          <p><em>Shown: Home Page &amp; Responsive Views</em></p>
+                          <a href="#" class="slide-expand imcd-expand"></a>
+                          <label for="corvisa-com-1">Return to Preview</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide slide__corvisa--light-poly">
+                      <input type="checkbox" id="corvisa-com-2">
+                      <div class="swiper-slide-flipper">
+                        <figure class="slide__standard-figure">
+                          <img src="/img/corvisa/corv-resources-thumb.png" data-rjs="2" />
+                          <label for="corvisa-com-2">View Details</label>
+                        </figure>
+                        <div class="slide-details">
+                          <h4>Corvisa.com</h4>
+                          <p class="note">Corvisa LLC, 2014&ndash;2016</p>
+                          <p>Primary marketing website for Corvisa, a telecommunications software company based in Milwaukee.  I was responsible for the design, development and day-to-day management.  Built using DjangoCMS.</p>
+                          <p><em>Shown: Resource Center</em></p>
+                          <a href="#" class="slide-expand imcd-expand"></a>
+                          <label for="corvisa-com-2">Return to Preview</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide slide__corvisa--dark-poly">
+                      <input type="checkbox" id="corvisa-com-3">
+                      <div class="swiper-slide-flipper">
+                        <figure class="slide__standard-figure">
+                          <img src="/img/corvisa/corv-product-thumb.png" data-rjs="2" />
+                          <label for="corvisa-com-3">View Details</label>
+                        </figure>
+                        <div class="slide-details">
+                          <h4>Corvisa.com</h4>
+                          <p class="note">Corvisa LLC, 2014&ndash;2016</p>
+                          <p>Primary marketing website for Corvisa, a telecommunications software company based in Milwaukee.  I was responsible for the design, development and day-to-day management.  Built using DjangoCMS.</p>
+                          <p><em>Shown: Product Template &amp; Responsive View</em></p>
+                          <a href="#" class="slide-expand imcd-expand"></a>
+                          <label for="corvisa-com-3">Return to Preview</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide slide__corvisa--light-poly">
+                      <input type="checkbox" id="corvisa-com-4">
+                      <div class="swiper-slide-flipper">
+                        <figure class="slide__full-figure">
+                          <img src="/img/corvisa/corv-blog-thumb.png" data-rjs="2" />
+                          <label for="corvisa-com-4">View Details</label>
+                        </figure>
+                        <div class="slide-details">
+                          <h4>Corvisa.com</h4>
+                          <p class="note">Corvisa LLC, 2014&ndash;2016</p>
+                          <p>Primary marketing website for Corvisa, a telecommunications software company based in Milwaukee.  I was responsible for the design, development and day-to-day management.  Built using DjangoCMS.</p>
+                          <p><em>Shown: Blog Index</em></p>
+                          <a href="#" class="slide-expand imcd-expand"></a>
+                          <label for="corvisa-com-4">Return to Preview</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery__pagination"></div>
+              </div>
+              <div class="gallery__swiper" id="cor-2">
+                <div class="gallery__button-prev imcd-navigate_before"></div>
+                <div class="gallery__button-next imcd-navigate_next"></div>
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide slide__corvisa--summit">
+                      <input type="checkbox" id="summit-1">
+                      <div class="swiper-slide-flipper">
+                        <figure class="slide__standard-figure">
+                          <img src="/img/corvisa/summit-home-thumb.png" data-rjs="2" />
+                          <label for="summit-1">View Details</label>
+                        </figure>
+                        <div class="slide-details">
+                          <h4>Corvisa Developers</h4>
+                          <p class="note">Corvisa LLC, 2014&ndash;2016</p>
+                          <p>Marketing &amp; Community site for Corvisa’s Summit platform developer network.  I was responsible for the design, development and day-to-day management.  Built using DjangoCMS.</p>
+                          <p><em>Shown: Home Page &amp; Responsive View</em></p>
+                          <a href="#" class="slide-expand imcd-expand"></a>
+                          <label for="summit-1">Return to Preview</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide slide__corvisa--summit">
+                      <input type="checkbox" id="summit-2">
+                      <div class="swiper-slide-flipper">
+                        <figure class="slide__full-figure">
+                          <img src="/img/corvisa/summit-whydevs-thumb.png" data-rjs="2" />
+                          <label for="summit-2">View Details</label>
+                        </figure>
+                        <div class="slide-details">
+                          <h4>Corvisa Developers</h4>
+                          <p class="note">Corvisa LLC, 2014&ndash;2016</p>
+                          <p>Marketing &amp; Community site for Corvisa’s Summit platform developer network.  I was responsible for the design, development and day-to-day management.  Built using DjangoCMS.</p>
+                          <p><em>Shown: Why Developers Love Us</em></p>
+                          <a href="#" class="slide-expand imcd-expand"></a>
+                          <label for="summit-2">Return to Preview</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide slide__corvisa--summit">
+                      <input type="checkbox" id="summit-3">
+                      <div class="swiper-slide-flipper">
+                        <figure class="slide__standard-figure">
+                          <img src="/img/corvisa/summit-pricing-thumb.png" data-rjs="2" />
+                          <label for="summit-3">View Details</label>
+                        </figure>
+                        <div class="slide-details">
+                          <h4>Corvisa Developers</h4>
+                          <p class="note">Corvisa LLC, 2014&ndash;2016</p>
+                          <p>Marketing &amp; Community site for Corvisa’s Summit platform developer network.  I was responsible for the design, development and day-to-day management.  Built using DjangoCMS.</p>
+                          <p><em>Shown: Pricing Views</em></p>
+                          <a href="#" class="slide-expand imcd-expand"></a>
+                          <label for="summit-3">Return to Preview</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery__pagination"></div>
+              </div>
+              <div class="gallery__swiper" id="cor-3">
+                <div class="gallery__button-prev imcd-navigate_before"></div>
+                <div class="gallery__button-next imcd-navigate_next"></div>
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide slide__corvisa--stratus">
+                      <input type="checkbox" id="stratus-1">
+                      <div class="swiper-slide-flipper">
+                        <figure class="slide__standard-figure">
+                          <img src="/img/corvisa/stratus-thumb.png" data-rjs="2" />
+                          <label for="stratus-1">View Details</label>
+                        </figure>
+                        <div class="slide-details">
+                          <h4>Stratus Dashboard</h4>
+                          <p class="note">Corvisa LLC, 2015</p>
+                          <p>Status &amp; incident tracking dashboard and archive for Corvisa platform &amp; services.  I was responsible for concept &amp; design as well as assisting with implementation.</p>
+                          <p><em>Shown: Responsive Dashboard</em></p>
+                          <a href="#" class="slide-expand imcd-expand"></a>
+                          <label for="stratus-1">Return to Preview</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery__pagination"></div>
+              </div>
+              <div class="gallery__swiper" id="cor-4">
+                <div class="gallery__button-prev imcd-navigate_before"></div>
+                <div class="gallery__button-next imcd-navigate_next"></div>
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide slide__corvisa--emailers">
+                      <input type="checkbox" id="emailers-1">
+                      <div class="swiper-slide-flipper">
+                        <figure class="slide__emailers-figure">
+                          <img src="/img/corvisa/emailers-thumb.png" data-rjs="2" />
+                          <label for="emailers-1">View Details</label>
+                        </figure>
+                        <div class="slide-details">
+                          <h4>Blog/Newsletter Emailers</h4>
+                          <p class="note">Corvisa LLC, 2015</p>
+                          <p>Autogenerated template for weekly blog &amp; newsletter emails.  I was responsible for concept, design and implementation.</p>
+                          <a href="#" class="slide-expand imcd-expand"></a>
+                          <label for="emailers-1">Return to Preview</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery__pagination"></div>
+              </div>
+              <div class="gallery__swiper" id="cor-5">
+                <div class="gallery__button-prev imcd-navigate_before"></div>
+                <div class="gallery__button-next imcd-navigate_next"></div>
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide slide__corvisa--dark-poly">
+                      <input type="checkbox" id="styleguide-1">
+                      <div class="swiper-slide-flipper">
+                        <figure class="slide__standard-figure">
+                          <img src="/img/corvisa/styleguide-index-thumb.png" data-rjs="2" />
+                          <label for="styleguide-1">View Details</label>
+                        </figure>
+                        <div class="slide-details">
+                          <h4>Web Style Guide</h4>
+                          <p class="note">Corvisa LLC</p>
+                          <p>A development &amp; style guide for the primary Corvisa marketing site, never actually made it to production.  I was responsible for concept, design and development.</p>
+                          <p><em>Shown: Guide Overview &amp; Responsive View</em></p>
+                          <a href="#" class="slide-expand imcd-expand"></a>
+                          <label for="styleguide-1">Return to Preview</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide slide__corvisa--dark-poly">
+                      <input type="checkbox" id="styleguide-2">
+                      <div class="swiper-slide-flipper">
+                        <figure class="slide__standard-figure">
+                          <img src="/img/corvisa/styleguide-media-thumb.png" data-rjs="2" />
+                          <label for="styleguide-2">View Details</label>
+                        </figure>
+                        <div class="slide-details">
+                          <h4>Web Style Guide</h4>
+                          <p class="note">Corvisa LLC</p>
+                          <p>A development &amp; style guide for the primary Corvisa marketing site, never actually made it to production.  I was responsible for concept, design and development.</p>
+                          <p><em>Shown: Colors &amp; Media Pages</em></p>
+                          <a href="#" class="slide-expand imcd-expand"></a>
+                          <label for="styleguide-2">Return to Preview</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide slide__corvisa--dark-poly">
+                      <input type="checkbox" id="styleguide-3">
+                      <div class="swiper-slide-flipper">
+                        <figure class="slide__full-figure">
+                          <img src="/img/corvisa/styleguide-buttons-thumb.png" data-rjs="2" />
+                          <label for="styleguide-3">View Details</label>
+                        </figure>
+                        <div class="slide-details">
+                          <h4>Web Style Guide</h4>
+                          <p class="note">Corvisa LLC</p>
+                          <p>A development &amp; style guide for the primary Corvisa marketing site, never actually made it to production.  I was responsible for concept, design and development.</p>
+                          <p><em>Shown: Links &amp; Buttons Page</em></p>
+                          <a href="#" class="slide-expand imcd-expand"></a>
+                          <label for="styleguide-3">Return to Preview</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery__pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="hr"><span></span></div>
+      <section id="anchor-trivera" class="grid__wrapper section__trivera align__center">
+        <h2>Trivera Interactive (2008&ndash;2013)</h2>
+        <div class="portfolio__wrapper">
+          <div class="portfolio__intro flex__wrapper">
+            <p>I was thrilled when I was hired at Trivera.  Getting to learn design and development at a respected Milwaukee agency was an exciting prospect.  It was here that I truly fell in love with the world of web design&mdash;embracing the culture and developing a never-ending desire to learn.</p>
+            <p>I quickly developed a passion for design and development.  Having the opportunity to work on multiple&mdash;and sometimes very different&mdash;projects was valuable in helping me find myself as a designer and an individual.  I spent several years with Trivera learning the ins and outs of web design and development.</p>
+            <p>While I&rsquo;ve ultimately determined agency life is not for me, I do appreciate the value in the variety and passion that an agency brings.  At Trivera I identified my style, learned how to deal with a variety of clients and made personal connections that will stay with me for the rest of my life.  It was an experience I&rsquo;ve come to value deeply.</p>
           </div>
 
-          <div>
-            <h3>Design Utilities</h3>
-            <p>Sketch, Photoshop, Illustrator, InVision, Typekit</p>
+          <div class="portfolio__gallery gallery">
+            <input type="checkbox" class="gallery__mobile-check" id="trivera-gallery-menu">
+            <div class="gallery__mobile-wrapper">
+              <label for="trivera-gallery-menu" class="gallery__mobile-toggle">Color Direct</label>
+              <ul class="list__no-format gallery__toggles">
+                <li class="active"><a href="#tri-1">Color Direct</a></li>
+                <li><a href="#tri-2">Caterina&rsquo;s Ristorante</a></li>
+                <li><a href="#tri-3">Misc. Work</a></li>
+              </ul>
+            </div>
 
-            <h3>Development Skillset</h3>
-            <p>HTML, CSS <em>(Sass, LESS),</em> Javascript <em>(JQuery, Angular, Ember),</em> Python <em>(Django),</em> PHP, Git, Grunt</p>
+
+
+            <div class="gallery__wrapper">
+              <div class="gallery__swiper gallery__swiper--active" id="tri-1">
+                <div class="gallery__button-prev imcd-navigate_before"></div>
+                <div class="gallery__button-next imcd-navigate_next"></div>
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide slide__trivera--color-direct">
+                      <input type="checkbox" id="color-direct-1">
+                      <div class="swiper-slide-flipper">
+                        <figure class="slide__full-figure">
+                          <img src="/img/trivera/color-direct-thumb.png" data-rjs="2" />
+                          <label for="color-direct-1">View Details</label>
+                        </figure>
+                        <div class="slide-details">
+                          <h4>Color Direct</h4>
+                          <p class="note">Trivera Interactive, 2012</p>
+                          <p>Marketing website for Color Direct, a digital graphics printing company based in Milwaukee.  I was responsible for design and front-end development.  Built using Concrete 5.</p>
+                          <p><em>Shown: Contact &amp; Home Page</em></p>
+                          <label for="color-direct-1">Return to Preview</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery__pagination"></div>
+              </div>
+              <div class="gallery__swiper" id="tri-2">
+                <div class="gallery__button-prev imcd-navigate_before"></div>
+                <div class="gallery__button-next imcd-navigate_next"></div>
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide slide__trivera--caterinas">
+                      <input type="checkbox" id="caterinas-1">
+                      <div class="swiper-slide-flipper">
+                        <figure class="slide__standard-figure">
+                          <img src="/img/trivera/caterinas-thumb.png" data-rjs="2" />
+                          <label for="caterinas-1">View Details</label>
+                        </figure>
+                        <div class="slide-details">
+                          <h4>Caterina&rsquo;s Ristorante</h4>
+                          <p class="note">Trivera Interactive, 2011</p>
+                          <p>Website for Caterina’s Ristorante in Milwaukee.  I was responsible for design and front-end development.  Built using Concrete 5.</p>
+                          <p><em>Shown: Menu &amp; Home Page</em></p>
+                          <label for="caterinas-1">Return to Preview</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery__pagination"></div>
+              </div>
+              <div class="gallery__swiper" id="tri-3">
+                <div class="gallery__button-prev imcd-navigate_before"></div>
+                <div class="gallery__button-next imcd-navigate_next"></div>
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide slide__trivera--misc">
+                      <input type="checkbox" id="trivera-misc-1">
+                      <div class="swiper-slide-flipper">
+                        <figure class="slide__standard-figure">
+                          <img src="/img/trivera/misc-work-thumb.png" data-rjs="2" />
+                          <label for="trivera-misc-1">View Details</label>
+                        </figure>
+                        <div class="slide-details">
+                          <h4>Misc. Work</h4>
+                          <p class="note">Trivera Interactive, 2012-2013</p>
+                          <p>Miscellaneous design work done while employed at Trivera Interactive.</p>
+                          <p><em>Shown: Trivera Interactive, Babb Group &amp; Milwaukee Succeeds</em></p>
+                          <label for="trivera-misc-1">Return to Preview</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery__pagination"></div>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
+      <div class="hr"><span></span></div>
+      <footer id="anchor-footer" class="grid__wrapper section__footer align__center">
+        <ul class="list__no-format list__social">
+          <li class="sm-github"><a title="github" class="imcd-github" href="https://github.com/ianmcd"></a></li>
+          <li class="sm-linked"><a title="LinkedIn" class="imcd-linkedin"  href="https://www.linkedin.com/in/ianmcdowell"></a></li>
+          <li class="sm-insta"><a title="Instagram" class="imcd-instagram"  href="https://www.instagram.com/ianmcdwi/"></a></li>
+          <li class="sm-messenger"><a title="Messenger" class="imcd-messenger" href="https://m.me/ianmcd"></a></li>
+          <li class="sm-email"><a title="email" class="imcd-drafts" href="mailto:ianmcd@gmail.com"></a></li>
+        </ul>
+        <figure class="fig__clipper"></figure>
+      </footer>
+    </main>
 
+    <div class="modal__wrapper">
+      <div class="modal__inner">
+        <div class="modal__header">
+          <div class="modal__header--left">
+            <h4>Title</h4>
+            <p class="note">Date</p>
+          </div>
+          <ul class="list__no-format modal__controls">
+            <li><a href="#" class="imcd-navigate_before modal__controls--prev"></a></li>
+            <li class="modal__controls--vr"><a href="#" class="imcd-navigate_next modal__controls--next"></a></li>
+            <li><a href="#" class="imcd-close modal__controls--close"></a></li>
+          </ul>
+        </div>
+        <div class="modal__body">
+          <figure class="modal__image"><img src="" /></figure>
         </div>
       </div>
     </div>
-    <!-- compiled js -->
-    <script src="/js/booji.min.js"></script>
+
+    <script src="/js/build/production.min.js"></script>
 
     <!-- ga -->
     <script>

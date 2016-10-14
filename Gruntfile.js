@@ -2,149 +2,34 @@
 
 module.exports = function(grunt) {
   'use strict';
-  require('load-grunt-tasks')(grunt);                   // automatically load grunt tasks
-  require('time-grunt')(grunt);                         // time tracking for task processing
-  var autoprefixer = require('autoprefixer-core');      // css autoprefixer
+
+  //	loads grunt tasks automatically
+  require('load-grunt-tasks')(grunt);
+
+  //	times tasks for future optimization
+  require('time-grunt')(grunt);
+
+  var autoprefixer = require('autoprefixer-core');
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-
-  // JS ITEMS
-
-  // grunt-contrib-jshint
-    jshint: {
-      options: {
-        jshintrc: '.jshintrc',
-        reporter: require('jshint-stylish')             // pretty jshint reporter
-      },
-      all: [
-        'Gruntfile.js',
-        'src/js/**/*.js',
-        '!src/js/lib/**/*.js'                           // ignores /lib
-      ]
-    },
-
-  // grunt-contrib-concat
+    //	js concatenation
     concat: {
-      options: {
-        sourceMap: true
-      },
-      files: {
+      dev: {
         src: [
-          'src/js/lib/jquery.min.js',
-          'src/js/lib/**/*.js',
-          'src/js/**/*.js'
+          'http/js/lib/jquery.min.js',
+          'http/js/lib/**/*.js',
+          'http/js/**/*.js',
+          '!http/js/ignore/**/*.js',
+          '!http/js/build/**/*.js',
+          '!http/js/data/**/*.js'
         ],
-        dest: 'http/js/booji.js'
+        dest: 'http/js/build/production.js'
       }
     },
 
-  // grunt-contrib-uglify
-    uglify: {
-      options: {
-        sourceMap: true,
-        sourceMapIncludeSources: true,
-        sourceMapIn: 'http/js/booji.js.map'
-      },
-      files: {
-        src: 'http/js/booji.js',
-        dest: 'http/js/booji.min.js'
-      }
-    },
-
-
-  // SCSS/CSS ITEMS
-
-  // grunt-contrib-sass
-    sass: {
-      options: {
-        style: 'compressed',
-        compass: true
-      },
-      all: {
-        files: {
-          'http/css/merle.css': 'src/sass/merle.scss'
-        }
-      }
-    },
-
-  // grunt-scss-lint
-    scsslint: {
-      allFiles: [
-        'src/sass/**/*.scss'
-      ],
-      options: {
-        config: '.scss-lint.yml',
-        reporterOutput: 'scss-lint-report.xml',
-        colorizeOutput: true
-      }
-    },
-
-  // grunt-postcss
-    postcss: {
-      options: {
-        processors: [
-          autoprefixer({ browsers: ['last 2 version'] }).postcss
-        ],
-        map: true
-      },
-      all: { src: 'http/css/merle.css' }
-    },
-
-
-  // IMAGES
-
-  // grunt-responsive-images
-    responsive_images: {
-      allFiles: {
-        options: {
-          sizes: [{
-            name: 'min',
-            width: '50%'
-          },{
-            name: 'min',
-            width: '100%',
-            suffix: '@2x'
-          }]
-        },
-        files: [{
-          expand: true,
-          src: ['**.{jpg,png}'],
-          cwd: 'src/img/orig',
-          dest: 'src/img'
-        }]
-      }
-    },
-
-  // grunt-tinypng
-    tinypng: {
-      options: {
-        apiKey: 'ZGkTfFwW-seVEz2ZAhkfmT651H2D_th1',
-        summarize: true,
-        showProgress: true,
-        stopOnImageError: true
-      },
-      png: {
-        expand: true,
-        cwd: 'src/img/',
-        src: '*.png',
-        dest: 'http/img/',
-        ext: '.png'
-      },
-      jpg: {
-        expand: true,
-        cwd: 'src/img/',
-        src: '*.jpg',
-        dest: 'http/img/',
-        ext: '.jpg'
-      }
-    },
-
-
-  // LOCAL SERVER
-
-  // grunt-contrib-connect
+    //	grunt server
     connect: {
       options: {
         port: 4444,
@@ -159,53 +44,91 @@ module.exports = function(grunt) {
       }
     },
 
-  // grunt-contrib-watch
+    // scss linter
+    scsslint: {
+      allFiles: [
+        'http/sass/**/*.scss'
+      ],
+      options: {
+        config: '.scss-lint.yml',
+        reporterOutput: 'scss-lint-report.xml',
+        colorizeOutput: true
+      }
+    },
+
+    //	sass
+    sass: {
+      options: {
+        sourcemap: 'auto',
+        style: 'compressed',
+        compass: true,
+        require: 'susy'
+        },
+      dev: {
+        files: {
+          'http/css/system.css': 'http/sass/system.scss'
+        }
+      }
+    },
+
+    //	js minification
+    uglify: {
+      options: {
+        sourceMap: true
+      },
+      dev: {
+        src: 'http/js/build/production.js',
+        dest: 'http/js/build/production.min.js'
+      }
+    },
+
+    // postcss w/ autoprefixer
+    postcss: {
+      options: {
+        processors: [
+          autoprefixer({ browsers: ['last 2 version', 'ie >= 9'] }).postcss
+        ],
+        map: true
+      },
+      dist: { src: 'http/css/system.css' }
+    },
+
+    //	watches files / runs tasks as needed
     watch: {
       js: {
-        files: ['src/js/**/*.js'],
-        tasks: ['jshint', 'concat', 'uglify']
+        files: ['http/js/**/*.js', '!http/js/build/*.js'],
+        tasks: ['concat', 'uglify']
       },
       css: {
-        files: ['src/sass/**/*.scss'],
+        files: ['http/sass/**/*.scss'],
         tasks: ['scsslint', 'sass', 'postcss']
-      },
-      img: {
-        files: ['src/img/**/*.{png,jpg}'],
-        tasks: ['newer:tinypng']      // only run on new files
       },
       livereload: {
         options: {
           livereload: true
         },
-        files: ['http/**/*.{html,css,js,png,jpg}']
+        files: [
+          'http/**/*.html',
+          'http/**/*.css',
+          'http/**/*.js'
+        ]
       }
     }
   });
 
-
-  // TASKS
+  //	TASKS
 
   grunt.registerTask('serve', [
-    'jshint',
     'concat',
     'uglify',
     'scsslint',
     'sass',
     'postcss',
-    'newer:responsive_images',
-    'newer:tinypng',
     'connect',
     'watch'
   ]);
 
-  grunt.registerTask('build', [
-    'jshint',
-    'concat',
-    'uglify',
-    'scsslint',
-    'sass',
-    'postcss',
-    'responsive_images',
-    'tinypng'
+  grunt.registerTask('default', [
+    'serve'
   ]);
 };

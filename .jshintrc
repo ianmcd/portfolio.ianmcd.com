@@ -16,10 +16,5 @@
   "strict": true,
 
   "browser": true,
-  "jquery": true,
-
-  "globals": {
-    "console": true,
-    "WOW": true
-  }
+  "jquery": true
 }

@@ -1,6 +1,5 @@
-######Site Updated: 01/03/2016
-
 ##[http://portfolio.ianmcd.com](http://portfolio.ianmcd.com)
+######*v2.0 &ndash; Site Updated: 09/12/2016*
 
 The resume and portfolio of Milwaukee based Visual Designer & Front-End Developer, Ian McDowell.
 
@@ -12,20 +11,13 @@ The resume and portfolio of Milwaukee based Visual Designer & Front-End Develope
 
 ##dev info
 ###about browser support
-I've used flexbox for positioning of elements, so only modern browsers will be fully supported.  Only IE users should be concerned and if you're up to date you should be mostly fine.  If you ARE experiencing issues I'd suggest viewing the PDF version listed above, sorry for any issues.
+I've used flexbox for positioning of elements and CSS transitions/animations, so only modern browsers will be fully supported.  Only IE users should be concerned and if you're up to date you should be mostly fine.  If you ARE experiencing issues I'd suggest viewing the PDF version listed above, sorry for any issues.
 
 ###fonts
-* [Freight Text Pro](https://typekit.com/fonts/freight-text-pro) & [Futura PT](https://typekit.com/fonts/futura-pt) served by [Typekit](https://typekit.com/)
+* [Freight Display Pro](https://typekit.com/fonts/freight-display-pro) & [Brandon Grotesque](https://typekit.com/fonts/brandon-grotesque) served by [Typekit](https://typekit.com/)
 
 ###js libraries
-* [jquery](https://jquery.com/)
-* [retina.js](http://imulus.github.io/retinajs/) &ndash; auto replaces images with @2x when appropriate.
-* [isotope](http://isotope.metafizzy.co/) &ndash; for masonry features.
-* [imagesloaded](http://imagesloaded.desandro.com/) &ndash; detects if images are loaded, using w/ isotope to resolve masonry issues.
-
-###environment
-I use [grunt](https://github.com/gruntjs/grunt) to streamline a variety of tasks and to view & test things on a local server with livereload. I use the following [packages](https://github.com/ianmcd/portfolio.ianmcd.com/blob/master/package.json):
-* List to come.
-
-###deployment
-To come.
+* [jquery 2.1.4](https://jquery.com/)
+* [retina.js 2.1.0 slidhtly modified](http://imulus.github.io/retinajs/) &ndash; auto replaces images with @2x when appropriate.
+* [twitter bootstrap scrollspy.js 3.3.7](http://isotope.metafizzy.co/) &ndash; for updating nav targets based on scroll position.
+* [swiper 3.3.1](http://idangero.us/swiper/) &ndash; carousel/slider with mobile touch capabilities.

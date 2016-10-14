@@ -1,0 +1,111 @@
+.slide__corvisa--light-poly {
+  background: url('/img/light-poly.png') no-repeat;
+  background-size: 1000px 550px;
+}
+
+.slide__corvisa--dark-poly {
+  background: url('/img/dark-poly.png') no-repeat;
+  background-size: 1000px 550px;
+}
+
+.slide__corvisa--summit {
+  background: url('/img/summit-bg.png') no-repeat;
+  background-size: 1000px 550px;
+}
+
+.slide__corvisa--stratus {
+  background: url('/img/stratus-bg.png') no-repeat;
+  background-size: 1000px 550px;
+}
+
+.slide__corvisa--emailers {
+  background: url('/img/emailers-bg.png') no-repeat;
+  background-size: 1000px 550px;
+}
+
+.slide__emailers-figure {
+  bottom: 4.55%;
+  left: 8.6%;
+  padding-bottom: 50%;
+  width: 42.7%;
+}
+
+.corvisa-devices {
+  bottom: -5px;
+  height: 492px;
+  left: 25px;
+  width: 759px;
+  z-index: 20;
+}
+
+
+@media	only screen and (-webkit-min-device-pixel-ratio: 1.3),
+        only screen and (-o-min-device-pixel-ratio: 13/10),
+        only screen and (min-resolution: 120dpi) {
+
+  .slide__corvisa--light-poly { background-image: url('/img/light-poly@2x.png'); }
+  .slide__corvisa--dark-poly { background-image: url('/img/dark-poly@2x.png'); }
+  .slide__corvisa--summit { background-image: url('/img/summit-bg@2x.png'); }
+  .slide__corvisa--stratus { background-image: url('/img/stratus-bg@2x.png'); }
+  .slide__corvisa--emailers { background-image: url('/img/emailers-bg@2x.png'); }
+}
+
+
+
+@media only screen and (max-width: 1080px) {
+  .slide__corvisa--emailers .slide__emailers-figure {
+    bottom: 0;
+
+    img {
+      margin-left: 12.45%;
+      margin-top: 2.5%;
+      width: 75%;
+    }
+  }
+
+  .slide__corvisa--light-poly,
+  .slide__corvisa--dark-poly,
+  .slide__corvisa--summit,
+  .slide__corvisa--stratus,
+  .slide__corvisa--emailers {
+    background: none;
+  }
+
+
+
+  .slide__corvisa--light-poly figure {
+    background: url('/img/light-poly.png') no-repeat;
+    background-size: 1000px 550px;
+  }
+
+  .slide__corvisa--dark-poly figure {
+    background: url('/img/dark-poly.png') no-repeat;
+    background-size: 1000px 550px;
+  }
+
+  .slide__corvisa--summit figure {
+    background: url('/img/summit-bg.png') no-repeat;
+    background-size: 1000px 550px;
+  }
+
+  .slide__corvisa--stratus figure {
+    background: url('/img/stratus-bg.png') no-repeat;
+    background-size: 1000px 550px;
+  }
+
+  .slide__corvisa--emailers figure {
+    background: url('/img/emailers-bg.png') no-repeat;
+    background-size: 1000px 550px;
+  }
+
+  @media	only screen and (-webkit-min-device-pixel-ratio: 1.3),
+          only screen and (-o-min-device-pixel-ratio: 13/10),
+          only screen and (min-resolution: 120dpi) {
+
+    .slide__corvisa--light-poly figure { background-image: url('/img/light-poly@2x.png'); }
+    .slide__corvisa--dark-poly figure { background-image: url('/img/dark-poly@2x.png'); }
+    .slide__corvisa--summit figure { background-image: url('/img/summit-bg@2x.png'); }
+    .slide__corvisa--stratus figure { background-image: url('/img/stratus-bg@2x.png'); }
+    .slide__corvisa--emailers figure { background-image: url('/img/emailers-bg@2x.png'); }
+  }
+}
