@@ -23,15 +23,29 @@
 }
 
 .slide-expand {
-  bottom: 50px;
-  color: $sand;
+  background: $terracotta;
+  border-radius: 50%;
+  bottom: 35px;
+  box-shadow: 0 4px 6px rgba($dark, .11), 0 1px 3px rgba($black, .08);
+  color: $white;
+  display: inline-block;
   font-size: 22px;
+  height: 45px;
+  line-height: 44px;
   position: absolute;
-  right: 50px;
+  right: 35px;
+  text-align: center;
   text-decoration: none;
-  transition: color .3s;
+  transition: all .3s;
+  width: 45px;
 
-  &:hover { color: $terracotta; }
+
+  &:hover {
+    //background: $page-bg;
+    box-shadow: 0 7px 14px rgba($dark, .1), 0 3px 6px rgba($black, .08);
+    //color: $terracotta;
+    transform: translateY(-1px);
+  }
 }
 
 .slide__standard-figure {
@@ -57,6 +71,6 @@
     padding: 0;
     z-index: 2;
   }
-  
+
   .slide__standard-figure img { margin-top: 8.34%; }
 }
